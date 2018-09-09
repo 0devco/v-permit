@@ -1,3 +1,5 @@
+<p align="center" ><img src="https://raw.githubusercontent.com/0devco/v-permit/master/v-permit.png"></p>
+
 # v-permit
 🔑 Vue Roles & Permissions (ACL) ⇆ [ Laravel+ Rails] ⇆ 0devco
 

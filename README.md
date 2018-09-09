@@ -4,7 +4,7 @@
 # install
 
 ```bash
-npm -i @0devco/v-permit
+npm i @0devco/v-permit
 # yarn
 yarn add @0devco/v-permit
 ```

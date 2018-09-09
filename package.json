@@ -1,0 +1,52 @@
+{
+  "name": "@0devco/permit",
+  "version": "0.0.1",
+  "description": "Vue Roles & Permissions (ACL) ⇆ [ Laravel+ Rails] ⇆ 0devco",
+  "main": "dist/index.js",
+  "scripts": {
+    "pretest": "npm run transpile",
+    "test": "node_modules/.bin/mocha test/tests.js",
+    "transpile": "node  ./node_modules/babel-cli/bin/babel.js src --quiet --out-dir dist",
+    "bundle": "node_modules/.bin/webpack dist/index.js build/sonata.js --output-library sonata",
+    "uglify": "node_modules/.bin/uglifyjs build/sonata.js --compress --mangle --output build/sonata.min.js",
+    "build": "npm run transpile && npm run bundle && npm run uglify",
+    "coverage": "npm run transpile && node_modules/.bin/nyc mocha test/tests.js",
+    "reporter": "node_modules/.bin/nyc report --reporter=html"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0devco/JSpermit"
+  },
+  "keywords": [
+    "0devco",
+    "v-permit",
+    "JSpermit",
+    "permissions",
+    "roles",
+    "acl",
+    "vuejs",
+    "vue"
+  ],
+  "author": {
+    "name": "0devco",
+    "email": "0devco.ceo@gmail.com",
+    "url": "http://0dev.co"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0devco/v-permit/issues"
+  },
+  "homepage": "https://github.com/0devco/v-permit",
+  "devDependencies": {
+    "vue": "^2.5.2"
+  },
+  "dependencies": {
+    "@0devco/crabs": "^1.5.0",
+    "axios": "^0.18.0",
+  }
+}

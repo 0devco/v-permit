@@ -44,7 +44,7 @@ export default {
 
     }
   },
-  mixins: [permit],
+  mixins: [permitMixins]
 }
 </script>
 

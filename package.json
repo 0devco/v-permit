@@ -1,17 +1,10 @@
 {
-  "name": "@0devco/permit",
+  "name": "@0devco/v-permit",
   "version": "0.0.1",
   "description": "Vue Roles & Permissions (ACL) ⇆ [ Laravel+ Rails] ⇆ 0devco",
   "main": "dist/index.js",
   "scripts": {
-    "pretest": "npm run transpile",
-    "test": "node_modules/.bin/mocha test/tests.js",
-    "transpile": "node  ./node_modules/babel-cli/bin/babel.js src --quiet --out-dir dist",
-    "bundle": "node_modules/.bin/webpack dist/index.js build/sonata.js --output-library sonata",
-    "uglify": "node_modules/.bin/uglifyjs build/sonata.js --compress --mangle --output build/sonata.min.js",
-    "build": "npm run transpile && npm run bundle && npm run uglify",
-    "coverage": "npm run transpile && node_modules/.bin/nyc mocha test/tests.js",
-    "reporter": "node_modules/.bin/nyc report --reporter=html"
+    "test": "node_modules/.bin/mocha test/tests.js"
   },
   "babel": {
     "presets": [
@@ -20,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/0devco/JSpermit"
+    "url": "https://github.com/0devco/v-permit"
   },
   "keywords": [
     "0devco",

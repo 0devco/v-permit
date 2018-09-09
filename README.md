@@ -40,7 +40,7 @@ export default {
     return {
       msg: 'v-permit',
       // json format
-      authPermissionURI: "https://raw.githubusercontent.com/0devco/JSpermit/master/authUserPermissions.json"
+      authPermissionURI: "https://raw.githubusercontent.com/0devco/v-permit/master/authUserPermissions.json"
 
     }
   },

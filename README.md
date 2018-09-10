@@ -23,13 +23,13 @@ Vue.use(Vpermit);
 ```html
 <template lang="html">
   <div class="">
-    <div class="" v-permit="hasAllPermission('edit-post','delete-post') || v_permit">
+    <div class="" v-permit="hasAllPermission('a1','edit-post','delete-post') || v_permit.a1">
       <h1>done! all permission exist </h1>
     </div>
-    <div v-permit="hasAllPermission('edit-post','delete-post','create-user') || v_permit">
+    <div v-permit="hasAllPermission('b43','edit-post','delete-post','create-user') || v_permit.b43">
       <h1>don't have create user permissions </h1>
     </div>
-    <div v-permit="hasAnyPermission('edit-post','delete-post','create-user') || v_permit">
+    <div v-permit="hasAnyPermission('c21','edit-post','delete-post','create-user') || v_permit.c21">
       <h1>don't have create user permissions but hasAnyPermission exists  </h1>
     </div>
   </div>
@@ -55,5 +55,14 @@ export default {
 </style>
 
 ```
+
+# Tips & stricly follow
+
+~ v-permit="hasAnyPermission(`'c21'`,'edit-post','delete-post','create-user') || `v_permit.c21`"
+
+* first element is check id (ex `c21`)
+* check id will be `unique`
+* you can use check id ( `a1 → a50` ,` b1 → b50`, `c1 → c50`, `d1 → d50` , `e1 → e50` )
+
 
 <a href="https://twitter.com/0devco" target="_blank" ><p align="center" ><img src="https://raw.githubusercontent.com/0devco/docs/master/.devco-images/logo-transparent.png"></p></a>

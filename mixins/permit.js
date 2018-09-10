@@ -28,7 +28,7 @@ export default {
       let afterCheck = []
 
       if (this.v_permit[`${triggerItem}`] === false && this.v_permit_loop_off[`${triggerItem}`] === 'none') {
-        axios.get('https://raw.githubusercontent.com/0devco/JSpermit/master/authUserPermissions.json')
+        axios.get(this.authPermissionURI)
           .then(response => {
             authUserPermissions = response.data
             // console.log(authUserPermissions)
@@ -72,7 +72,7 @@ export default {
       let afterCheck = []
 
       if (this.v_permit[`${triggerItem}`] === false && this.v_permit_loop_off[`${triggerItem}`] === 'none') {
-        axios.get('https://raw.githubusercontent.com/0devco/JSpermit/master/authUserPermissions.json')
+        axios.get(this.authPermissionURI)
           .then(response => {
             authUserPermissions = response.data
             // console.log(authUserPermissions)

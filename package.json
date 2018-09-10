@@ -1,6 +1,6 @@
 {
   "name": "@0devco/v-permit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue Roles & Permissions (ACL) ⇆ [ Laravel+ Rails] ⇆ 0devco",
   "main": "dist/index.js",
   "scripts": {

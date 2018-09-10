@@ -41,6 +41,5 @@
   "dependencies": {
     "@0devco/crabs": "^1.5.0",
     "axios": "^0.18.0"
-  },
-  "license" : "MIT License" 
+  }
 }

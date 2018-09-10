@@ -20,11 +20,9 @@ export default {
       triggerItem = crabs(requestAll).first()
       checkPermissions = crabs(requestAll).slice(1).all()
 
-      // if (this.v_permit[`${triggerItem}`] === undefined) {
-      //   this.v_permit[`${triggerItem}`] = true
-      // }
-      console.log(`trigger is =  ${triggerItem}`)
-      console.log(`checking is = ${checkPermissions} `)
+
+      // console.log(`trigger is =  ${triggerItem}`)
+      // console.log(`checking is = ${checkPermissions} `)
 
       let authUserPermissions = []
       let afterCheck = []
@@ -33,19 +31,19 @@ export default {
         axios.get('https://raw.githubusercontent.com/0devco/JSpermit/master/authUserPermissions.json')
           .then(response => {
             authUserPermissions = response.data
-            console.log(authUserPermissions)
+            // console.log(authUserPermissions)
             checkPermissions.forEach(check => {
               let a = crabs(authUserPermissions).contains(check)
               afterCheck.push(a)
             })
-            console.log(afterCheck)
+            // console.log(afterCheck)
             if (crabs(afterCheck).contains(false) === false) {
               if (this.v_permit[`${triggerItem}`] === false) {
                 this.v_permit[`${triggerItem}`] = true
                 this.v_permit_loop_off[`${triggerItem}`] = true
               }
             } else {
-              console.log('not permit')
+              // console.log('not permit')
               if (this.v_permit[`${triggerItem}`] === false) {
                 this.v_permit[`${triggerItem}`] = false
                 this.v_permit_loop_off[`${triggerItem}`] = true
@@ -66,11 +64,9 @@ export default {
       triggerItem = crabs(requestAll).first()
       checkPermissions = crabs(requestAll).slice(1).all()
 
-      // if (this.v_permit[`${triggerItem}`] === undefined) {
-      //   this.v_permit[`${triggerItem}`] = true
-      // }
-      console.log(`trigger is =  ${triggerItem}`)
-      console.log(`checking is = ${checkPermissions} `)
+
+      // console.log(`trigger is =  ${triggerItem}`)
+      // console.log(`checking is = ${checkPermissions} `)
 
       let authUserPermissions = []
       let afterCheck = []
@@ -79,19 +75,19 @@ export default {
         axios.get('https://raw.githubusercontent.com/0devco/JSpermit/master/authUserPermissions.json')
           .then(response => {
             authUserPermissions = response.data
-            console.log(authUserPermissions)
+            // console.log(authUserPermissions)
             checkPermissions.forEach(check => {
               let a = crabs(authUserPermissions).contains(check)
               afterCheck.push(a)
             })
-            console.log(afterCheck)
+            // console.log(afterCheck)
             if (crabs(afterCheck).contains(true) === true) {
               if (this.v_permit[`${triggerItem}`] === false) {
                 this.v_permit[`${triggerItem}`] = true
                 this.v_permit_loop_off[`${triggerItem}`] = true
               }
             } else {
-              console.log('not permit')
+              // console.log('not permit')
               if (this.v_permit[`${triggerItem}`] === false) {
                 this.v_permit[`${triggerItem}`] = false
                 this.v_permit_loop_off[`${triggerItem}`] = true

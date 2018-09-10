@@ -1,6 +1,6 @@
 {
   "name": "@0devco/v-permit",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Vue Roles & Permissions (ACL) ⇆ [ Laravel+ Rails] ⇆ 0devco",
   "main": "dist/index.js",
   "scripts": {
@@ -41,5 +41,6 @@
   "dependencies": {
     "@0devco/crabs": "^1.5.0",
     "axios": "^0.18.0"
-  }
+  },
+  "license" : "MIT License" 
 }

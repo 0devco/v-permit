@@ -3,5 +3,6 @@
   "delete-post",
   "show-post",
   "create-post",
-  "update-post"
+  "update-post",
+  "upload-post"
 ]

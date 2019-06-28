@@ -3,6 +3,5 @@
   "delete-post",
   "show-post",
   "create-post",
-  "update-post",
-  "up",
+  "update-post"
 ]
